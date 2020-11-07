@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./App";
+import App from "./App2";
 import {ThemeContextProvider}  from './themeContext';
 /**
  * Challenge: Set up context to save the user's username and pass it to anywhere that is currently hardcoding "Username".

@@ -1,13 +1,17 @@
-// import React from 'react';
-// // import UserNameContext from './userNameContext';
+import React from 'react';
+import UserNameContext from './userNameContext';
 
-// function Main(props) {
-//         return(
-//             <main>
-//                 <p className="main">No new notifications, {props.username}! 🎉</p>
-//             </main>
-//         )
-//     }
+function Main() {
+        return(
+            <UserNameContext.Consumer>
+                {(username) => {
+                    <main>
+                     <p className="main">No new notifications, {username}! 🎉</p>
+                 </main>
+                }}
+            </UserNameContext.Consumer>
+        )
+    }
 
-// // Main.contextType = UserNameContext;
-// export default Main;
+// Main.contextType = UserNameContext;
+export default Main;
